@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.profile.ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/my_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:elevation="4dp"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Edit Account"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@color/light_gray"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/ivProfile"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/profile_icon">
+
+
+                        </de.hdodenhof.circleimageview.CircleImageView>
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="70dp"
+                            android:layout_marginTop="70dp"
+                            android:src="@mipmap/edit_iconnew">
+
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:padding="5dp"
+                                android:text="First Name"
+                                android:textSize="17dp">
+
+
+                            </TextView>
+
+                            <EditText
+                                android:id="@+id/etFName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:backgroundTint="@color/white"
+                                android:padding="5dp"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/gray">
+
+                        </View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:padding="5dp"
+                                android:text="Phone Number"
+                                android:textSize="17dp">
+
+
+                            </TextView>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/tvMobileNo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:padding="5dp"
+                                    android:singleLine="true"
+                                    android:text=""
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+
+                                </TextView>
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/gray">
+
+                        </View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:padding="5dp"
+                                android:text="Email"
+                                android:textSize="17dp">
+
+
+                            </TextView>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <EditText
+                                    android:id="@+id/etEmail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:backgroundTint="@color/white"
+                                    android:padding="5dp"
+                                    android:singleLine="true"
+                                    android:text=""
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp" />
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/gray">
+
+                        </View>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:padding="5dp"
+                                android:text="Vehical Category"
+                                android:textSize="17dp">
+
+
+                            </TextView>
+
+                            <EditText
+                                android:id="@+id/etLName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:background="@null"
+                                android:padding="5dp"
+                                android:singleLine="true"
+                                android:editable="false"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/gray">
+
+                        </View>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:padding="5dp"
+                                android:text="Vehical Type"
+                                android:textSize="17dp">
+
+
+                            </TextView>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <EditText
+                                    android:id="@+id/etVicheltype"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:backgroundTint="@color/white"
+                                    android:padding="5dp"
+                                    android:editable="false"
+                                    android:singleLine="true"
+                                    android:text=""
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp" />
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/gray">
+
+                        </View>
+
+                        <LinearLayout
+                            android:id="@+id/llTagnumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="70dp"
+                            android:background="@drawable/bg_rounded_upload"
+                            android:orientation="horizontal"
+                            android:padding="10sp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_10"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/tvTagno"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:background="@null"
+                                    android:hint="Vehicle Tag Number"
+                                    android:textColor="@color/defaultTextColor"
+                                    android:textSize="15dp" />
+                                <!--
+                                                    <TextView
+                                                        android:visibility="invisible"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="start"
+                                                        android:text="@string/txt_recommended_next_step"
+                                                        android:textColor="@color/textGrey"
+                                                        android:textSize="@dimen/sp_15" />-->
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:background="@drawable/bg_rounded_upload"
+                            android:orientation="horizontal"
+                            android:padding="10sp">
+
+
+                            <LinearLayout
+                                android:id="@+id/llProfilePhoto"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="onClickVehiclePermit"
+                                android:orientation="horizontal">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/imgdrvrLcnsFrnt"
+                                    android:layout_width="@dimen/dp_30"
+                                    android:layout_height="@dimen/dp_30"
+                                    android:layout_marginLeft="@dimen/dp_8"
+                                    android:layout_gravity="start|center"
+                                    android:src="@color/white" />
+
+                                <LinearLayout
+                                    android:id="@+id/ll_photo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_10"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:text="@string/driving_licence_front"
+                                        android:textColor="@color/defaultTextColor"
+                                        android:textSize="@dimen/sp_15" />
+                                    <!--
+                                                    <TextView
+                                                        android:visibility="invisible"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="start"
+                                                        android:text="@string/txt_recommended_next_step"
+                                                        android:textColor="@color/textGrey"
+                                                        android:textSize="@dimen/sp_15" />-->
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                            <ImageView
+                                android:id="@+id/profileTick"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/right_arrow" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:background="@drawable/bg_rounded_upload"
+                            android:orientation="horizontal"
+                            android:padding="10sp">
+
+                            <LinearLayout
+                                android:id="@+id/llDrivingLicence"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="onClickVehiclePermit"
+                                android:orientation="horizontal">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/imgLicenceBack"
+                                    android:layout_width="@dimen/dp_30"
+                                    android:layout_height="@dimen/dp_30"
+                                    android:layout_gravity="start|center"
+                                    android:layout_marginLeft="@dimen/dp_8"
+                                    android:src="@color/white" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_10"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:layout_marginTop="5dp"
+                                        android:text="@string/driving_licence_back"
+                                        android:textColor="@color/defaultTextColor"
+                                        android:textSize="@dimen/sp_15" />
+
+                                    <!--   <TextView
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:layout_gravity="start"
+                                           android:text="@string/txt_ready_to_begin"
+                                           android:textColor="@color/textGrey"
+                                           android:textSize="@dimen/sp_15" />-->
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/driverlicenceTick"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/right_arrow" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:background="@drawable/bg_rounded_upload"
+                            android:orientation="horizontal"
+                            android:padding="10sp">
+
+                            <LinearLayout
+                                android:id="@+id/llPanCard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="onClickVehiclePermit"
+                                android:orientation="horizontal">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/imgSoclScrtyFrnt"
+                                    android:layout_width="@dimen/dp_30"
+                                    android:layout_height="@dimen/dp_30"
+                                    android:layout_gravity="start|center"
+                                    android:layout_marginLeft="@dimen/dp_8"
+                                    android:src="@color/white" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_10"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:layout_marginTop="5dp"
+                                        android:text="@string/social_security_front"
+                                        android:textColor="@color/defaultTextColor"
+                                        android:textSize="@dimen/sp_15" />
+
+                                    <!--     <TextView
+                                             android:layout_width="wrap_content"
+                                             android:layout_height="wrap_content"
+                                             android:layout_gravity="start"
+                                             android:text="@string/txt_ready_to_begin"
+                                             android:textColor="@color/textGrey"
+                                             android:textSize="@dimen/sp_15" />-->
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/panTick"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/right_arrow" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:background="@drawable/bg_rounded_upload"
+                            android:orientation="horizontal"
+                            android:padding="10sp">
+
+                            <LinearLayout
+                                android:id="@+id/llVehicleInsurance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="onClickVehiclePermit"
+                                android:orientation="horizontal">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/imgSclBack"
+                                    android:layout_width="@dimen/dp_30"
+                                    android:layout_height="@dimen/dp_30"
+                                    android:layout_gravity="start|center"
+                                    android:layout_marginLeft="@dimen/dp_8"
+                                    android:src="@color/white" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_10"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:layout_marginTop="5dp"
+                                        android:text="@string/social_security_back"
+                                        android:textColor="@color/defaultTextColor"
+                                        android:textSize="@dimen/sp_15" />
+
+                                    <!--  <TextView
+                                          android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:layout_gravity="start"
+                                          android:text="@string/txt_ready_to_begin"
+                                          android:textColor="@color/textGrey"
+                                          android:textSize="@dimen/sp_15" />
+                  -->
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/vehicleInsureTick"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/right_arrow" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:background="@drawable/bg_rounded_upload"
+                            android:orientation="horizontal"
+                            android:padding="10sp">
+
+                            <LinearLayout
+                                android:id="@+id/llRC"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="onClickVehiclePermit"
+                                android:orientation="horizontal">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/imgVehiclRegistration"
+                                    android:layout_width="@dimen/dp_30"
+                                    android:layout_height="@dimen/dp_30"
+                                    android:layout_gravity="start|center"
+                                    android:layout_marginLeft="@dimen/dp_8"
+                                    android:src="@color/white" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_10"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:layout_marginTop="5dp"
+                                        android:text="@string/vehicle_registration"
+                                        android:textColor="@color/defaultTextColor"
+                                        android:textSize="@dimen/sp_15" />
+
+                                    <!--   <TextView
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:layout_gravity="start"
+                                           android:text="@string/txt_ready_to_begin"
+                                           android:textColor="@color/textGrey"
+                                           android:textSize="@dimen/sp_15" />-->
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/regTick"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/right_arrow" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:background="@drawable/bg_rounded_upload"
+                            android:orientation="horizontal"
+                            android:padding="10sp">
+
+                            <LinearLayout
+                                android:id="@+id/llVehiclePermit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="onClickVehiclePermit"
+                                android:orientation="horizontal">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/imgVehcileInsurance"
+                                    android:layout_width="@dimen/dp_30"
+                                    android:layout_height="@dimen/dp_30"
+                                    android:layout_gravity="start|center"
+                                    android:layout_marginLeft="@dimen/dp_8"
+                                    android:src="@color/white" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_10"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:layout_marginTop="5dp"
+                                        android:text="@string/vehicle_insurance"
+                                        android:textColor="@color/defaultTextColor"
+                                        android:textSize="@dimen/sp_15" />
+
+                                    <!--   <TextView
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:layout_gravity="start"
+                                           android:text="@string/txt_ready_to_begin"
+                                           android:textColor="@color/textGrey"
+                                           android:textSize="@dimen/sp_15" />
+                   -->
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/permitTick"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/right_arrow" />
+
+                        </RelativeLayout>
+
+                        <!--              <LinearLayout
+                                          android:layout_width="match_parent"
+                                          android:layout_height="wrap_content"
+                                          android:layout_marginHorizontal="20dp"
+                                          android:layout_marginTop="20dp"
+                                          android:background="@drawable/car_photos"
+                                          android:orientation="vertical">
+
+                                          <TextView
+                                              android:layout_width="match_parent"
+                                              android:layout_height="wrap_content"
+                                              android:layout_gravity="center"
+                                              android:layout_marginHorizontal="10dp"
+                                              android:text="qery1234"
+                                              android:textSize="15dp" />
+
+
+                                      </LinearLayout>
+
+                                      <androidx.cardview.widget.CardView
+                                          android:layout_width="match_parent"
+                                          android:layout_height="wrap_content"
+                                          android:layout_marginHorizontal="20dp"
+                                          app:cardBackgroundColor="#ECEEEF"
+                                          app:cardCornerRadius="50dp"
+                                          android:layout_marginTop="20dp">
+
+
+                                          <LinearLayout
+                                              android:layout_width="match_parent"
+                                              android:layout_height="wrap_content"
+                                              android:orientation="vertical">
+
+                                              <RelativeLayout
+                                                  android:layout_width="wrap_content"
+                                                  android:layout_height="wrap_content">
+
+                                                  <ImageView
+                                                      android:id="@+id/iv_car"
+                                                      android:layout_width="40dp"
+                                                      android:layout_height="40dp"
+                                                      android:padding="2dp"
+                                                      android:src="@drawable/profile" />
+
+                                                  <TextView
+                                                      android:layout_width="match_parent"
+                                                      android:layout_height="wrap_content"
+                                                      android:layout_marginHorizontal="50dp"
+                                                      android:layout_centerVertical="true"
+                                                      android:text="qery1234"/>
+
+                                                  <ImageView
+                                                      android:layout_width="40dp"
+                                                      android:layout_height="40dp"
+                                                      android:layout_alignParentRight="true"
+                                                      android:src="@drawable/right_arrow" />
+
+                                              </RelativeLayout>
+
+
+
+
+                                          </LinearLayout>
+
+
+                                      </androidx.cardview.widget.CardView>
+
+                                      <androidx.cardview.widget.CardView
+                                          android:layout_width="match_parent"
+                                          android:layout_height="wrap_content"
+                                          android:layout_marginHorizontal="20dp"
+                                          app:cardBackgroundColor="#ECEEEF"
+                                          app:cardCornerRadius="50dp"
+                                          android:layout_marginTop="20dp">
+
+
+                                          <LinearLayout
+                                              android:layout_width="match_parent"
+                                              android:layout_height="wrap_content"
+                                              android:orientation="vertical">
+
+                                              <RelativeLayout
+                                                  android:layout_width="wrap_content"
+                                                  android:layout_height="wrap_content">
+
+                                                  <ImageView
+                                                      android:layout_width="40dp"
+                                                      android:layout_height="40dp"
+                                                      android:padding="2dp"
+                                                      android:src="@drawable/profile" />
+
+                                                  <TextView
+                                                      android:layout_width="match_parent"
+                                                      android:layout_height="wrap_content"
+                                                      android:layout_marginHorizontal="50dp"
+                                                      android:layout_centerVertical="true"
+                                                      android:text="qery1234"/>
+
+                                                  <ImageView
+                                                      android:layout_width="40dp"
+                                                      android:layout_height="40dp"
+                                                      android:layout_alignParentRight="true"
+                                                      android:src="@drawable/right_arrow" />
+
+                                              </RelativeLayout>
+
+
+
+
+                                          </LinearLayout>
+
+
+                                      </androidx.cardview.widget.CardView>
+
+                                      <androidx.cardview.widget.CardView
+                                          android:layout_width="match_parent"
+                                          android:layout_height="wrap_content"
+                                          android:layout_marginHorizontal="20dp"
+                                          app:cardBackgroundColor="#ECEEEF"
+                                          app:cardCornerRadius="50dp"
+                                          android:layout_marginTop="20dp">
+
+
+                                          <LinearLayout
+                                              android:layout_width="match_parent"
+                                              android:layout_height="wrap_content"
+                                              android:orientation="vertical">
+
+                                              <RelativeLayout
+                                                  android:layout_width="wrap_content"
+                                                  android:layout_height="wrap_content">
+
+                                                  <ImageView
+                                                      android:layout_width="40dp"
+                                                      android:layout_height="40dp"
+                                                      android:padding="2dp"
+                                                      android:src="@drawable/profile" />
+
+                                                  <TextView
+                                                      android:layout_width="match_parent"
+                                                      android:layout_height="wrap_content"
+                                                      android:layout_marginHorizontal="50dp"
+                                                      android:layout_centerVertical="true"
+                                                      android:text="qery1234"/>
+
+                                                  <ImageView
+                                                      android:layout_width="40dp"
+                                                      android:layout_height="40dp"
+                                                      android:layout_alignParentRight="true"
+                                                      android:src="@drawable/right_arrow" />
+
+                                              </RelativeLayout>
+
+
+
+
+                                          </LinearLayout>
+
+
+                                      </androidx.cardview.widget.CardView>
+
+                                      <androidx.cardview.widget.CardView
+                                          android:layout_width="match_parent"
+                                          android:layout_height="wrap_content"
+                                          android:layout_marginHorizontal="20dp"
+                                          app:cardBackgroundColor="#ECEEEF"
+                                          app:cardCornerRadius="50dp"
+                                          android:layout_marginTop="20dp">
+
+
+                                          <LinearLayout
+                                              android:layout_width="match_parent"
+                                              android:layout_height="wrap_content"
+                                              android:orientation="vertical">
+
+                                              <RelativeLayout
+                                                  android:layout_width="wrap_content"
+                                                  android:layout_height="wrap_content">
+
+                                                  <ImageView
+                                                      android:layout_width="40dp"
+                                                      android:layout_height="40dp"
+                                                      android:padding="2dp"
+                                                      android:src="@drawable/profile" />
+
+                                                  <TextView
+                                                      android:layout_width="match_parent"
+                                                      android:layout_height="wrap_content"
+                                                      android:layout_marginHorizontal="50dp"
+                                                      android:layout_centerVertical="true"
+                                                      android:text="qery1234"/>
+
+                                                  <ImageView
+                                                      android:layout_width="40dp"
+                                                      android:layout_height="40dp"
+                                                      android:layout_alignParentRight="true"
+                                                      android:src="@drawable/right_arrow" />
+
+                                              </RelativeLayout>
+
+
+
+
+                                          </LinearLayout>
+
+
+                                      </androidx.cardview.widget.CardView>
+
+                                      <androidx.cardview.widget.CardView
+                                          android:layout_width="match_parent"
+                                          android:layout_height="wrap_content"
+                                          android:layout_marginHorizontal="20dp"
+                                          app:cardBackgroundColor="#ECEEEF"
+                                          app:cardCornerRadius="50dp"
+                                          android:layout_marginTop="20dp">
+
+
+                                          <LinearLayout
+                                              android:layout_width="match_parent"
+                                              android:layout_height="wrap_content"
+                                              android:orientation="vertical">
+
+                                              <RelativeLayout
+                                                  android:layout_width="wrap_content"
+                                                  android:layout_height="wrap_content">
+
+                                                  <ImageView
+                                                      android:layout_width="40dp"
+                                                      android:layout_height="40dp"
+                                                      android:padding="2dp"
+                                                      android:src="@drawable/profile" />
+
+                                                  <TextView
+                                                      android:layout_width="match_parent"
+                                                      android:layout_height="wrap_content"
+                                                      android:layout_marginHorizontal="50dp"
+                                                      android:layout_centerVertical="true"
+                                                      android:text="qery1234"/>
+
+                                                  <ImageView
+                                                      android:layout_width="40dp"
+                                                      android:layout_height="40dp"
+                                                      android:layout_alignParentRight="true"
+                                                      android:src="@drawable/right_arrow" />
+
+                                              </RelativeLayout>
+
+
+
+
+                                          </LinearLayout>
+
+
+                                      </androidx.cardview.widget.CardView>
+
+                                      <androidx.cardview.widget.CardView
+                                          android:layout_width="match_parent"
+                                          android:layout_height="wrap_content"
+                                          android:layout_marginHorizontal="20dp"
+                                          app:cardBackgroundColor="#ECEEEF"
+                                          app:cardCornerRadius="50dp"
+                                          android:layout_marginTop="20dp">
+
+
+                                          <LinearLayout
+                                              android:layout_width="match_parent"
+                                              android:layout_height="wrap_content"
+                                              android:orientation="vertical">
+
+                                              <RelativeLayout
+                                                  android:layout_width="wrap_content"
+                                                  android:layout_height="wrap_content">
+
+                                                  <ImageView
+                                                      android:layout_width="40dp"
+                                                      android:layout_height="40dp"
+                                                      android:padding="2dp"
+                                                      android:src="@drawable/profile" />
+
+                                                  <TextView
+                                                      android:layout_width="match_parent"
+                                                      android:layout_height="wrap_content"
+                                                      android:layout_marginHorizontal="50dp"
+                                                      android:layout_centerVertical="true"
+                                                      android:text="qery1234"/>
+
+                                                  <ImageView
+                                                      android:layout_width="40dp"
+                                                      android:layout_height="40dp"
+                                                      android:layout_alignParentRight="true"
+                                                      android:src="@drawable/right_arrow" />
+
+                                              </RelativeLayout>
+
+
+
+
+                                          </LinearLayout>
+
+
+                                      </androidx.cardview.widget.CardView>-->
+
+
+                        <Button
+                            android:id="@+id/btnNext"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/login_btn_bg"
+                            android:text="@string/submit"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_15"
+                            android:theme="@style/btn" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlLoader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <include layout="@layout/loader_layout" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

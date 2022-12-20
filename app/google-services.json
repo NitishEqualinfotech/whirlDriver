@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "668944644562",
+    "project_id": "whirl-user",
+    "storage_bucket": "whirl-user.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668944644562:android:ff48c6ffc714614670700b",
+        "android_client_info": {
+          "package_name": "com.app.whirl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668944644562-stru4hg1lhs7lq9pc8ls4a7508fe510n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR59mVCFPwFt7fCYAxo5NK7nn44P8wZGQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668944644562-stru4hg1lhs7lq9pc8ls4a7508fe510n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "668944644562-peqolm3o0097btq6k05vpdvndkigaot1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ei.whirl"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668944644562:android:8844e562171f399e70700b",
+        "android_client_info": {
+          "package_name": "com.whirl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668944644562-stru4hg1lhs7lq9pc8ls4a7508fe510n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR59mVCFPwFt7fCYAxo5NK7nn44P8wZGQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668944644562-stru4hg1lhs7lq9pc8ls4a7508fe510n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "668944644562-peqolm3o0097btq6k05vpdvndkigaot1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ei.whirl"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
